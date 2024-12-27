@@ -1,0 +1,81 @@
+/* app/calendario/CalendarPage.module.css */
+
+/* Hero Section */
+.calendarHero {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/images/calendar-hero.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+/* Calendar Section */
+.calendar {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.calendarGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+.calendarItem {
+  display: flex;
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Fecha */
+.date {
+  background: var(--primary-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.day {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.month {
+  color: white;
+}
+
+/* Info del evento */
+.eventInfo {
+  padding: 1.5rem;
+  color: white;
+}
+
+.time,
+.location {
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .calendarItem {
+    flex-direction: column;
+  }
+
+  .date {
+    padding: 1rem;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}

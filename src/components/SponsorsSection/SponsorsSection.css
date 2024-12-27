@@ -1,0 +1,37 @@
+.sponsors {
+  padding: 4rem 2rem;
+  background-color: #2a2a2a;
+}
+
+.sponsors h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sponsor-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-5px);
+}
+
+.sponsor-card img {
+  max-width: 100%;
+  height: auto;
+}

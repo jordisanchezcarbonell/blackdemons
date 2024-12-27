@@ -1,0 +1,24 @@
+/* app/equipo/EquipoPage.module.css */
+
+.teamHero {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/images/team-hero.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.teamHero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.teamHero p {
+  font-size: 1.2rem;
+}

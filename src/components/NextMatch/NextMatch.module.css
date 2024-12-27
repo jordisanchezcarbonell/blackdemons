@@ -1,0 +1,46 @@
+.next-match {
+  padding: 4rem 2rem;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.next-match h2 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.match-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+}
+
+.team {
+  text-align: center;
+}
+
+.team img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.match-info {
+  color: white;
+}
+
+.versus {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.date,
+.time {
+  color: #ff3e3e;
+}

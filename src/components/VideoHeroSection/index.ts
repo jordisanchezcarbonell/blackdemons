@@ -1,0 +1,1 @@
+export { VideoHeroSection } from './VideoHeroSection';

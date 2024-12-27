@@ -1,0 +1,102 @@
+.breakingNews {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #cc0000,
+    #ff0000
+  ); /* Fondo rojo para el slider */
+  color: white;
+  overflow: hidden;
+  position: relative;
+  z-index: 2; /* Asegura que esté sobre otros elementos */
+}
+
+/* Contenedor principal */
+.breakingNewsContainer {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+/* Etiqueta de Breaking News con fondo negro */
+.breakingLabel {
+  background: #000; /* Fondo negro para destacarlo */
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 3; /* Siempre encima del slider */
+}
+
+/* Fecha con estilo diferenciado */
+.dateLabel {
+  padding: 0 20px;
+  font-style: italic;
+  background: #333; /* Fondo oscuro diferente */
+  white-space: nowrap;
+  z-index: 3; /* Encima del slider */
+}
+
+/* Slider con animación */
+.newsSlider {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: slide 20s linear infinite;
+}
+
+/* Noticias individuales */
+.newsItem {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* Animación del slider */
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .breakingNews {
+    height: 30px;
+  }
+
+  .breakingLabel {
+    display: none;
+    padding: 0 10px;
+    font-size: 0.9rem;
+  }
+
+  .dateLabel {
+    display: none;
+
+    padding: 10 10px;
+    font-size: 0.9rem;
+  }
+
+  .newsItem {
+    padding: 0 10px;
+  }
+  .newsSlider {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: slide 15s linear infinite;
+  }
+}
